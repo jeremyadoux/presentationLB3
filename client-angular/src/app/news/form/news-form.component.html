@@ -1,0 +1,11 @@
+<form>
+  <div class="form-group">
+    <label for="news-title">Titre</label>
+    <input [(ngModel)]="news.title" type="text" class="form-control"  name="title"  id="news-title" placeholder="titre">
+  </div>
+  <div class="form-group">
+    <label for="news-description">Description</label>
+    <textarea [(ngModel)]="news.description" id='news-description'  name="description"  class="form-control" rows="3"></textarea>
+  </div>
+  <button (click)="saveForm()" class="btn btn-default">Enregistrer</button>
+</form>
